@@ -31,8 +31,8 @@ const Select = ({ id, label, options = [], disabled = false, className = '', ...
         {...props}
       >
         {options.map((option, index) => (
-          <option key={index} value={option.value}>
-            {option.label}
+          <option key={index} value={option?.value}>
+            {option?.label}
           </option>
         ))}
       </select>

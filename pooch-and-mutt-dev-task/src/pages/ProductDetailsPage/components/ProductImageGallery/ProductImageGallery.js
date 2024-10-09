@@ -12,7 +12,7 @@ const ProductImageGallery = () => {
     { src: productInBowlImage, alt: 'Bowl of Health & Digestion dog food' },
   ];
 
-  const [selectedProductImage, setSelectedProductImage] = useState(productImages[0].src);
+  const [selectedProductImage, setSelectedProductImage] = useState(productImages[0]?.src);
 
   return (
     <div className="flex flex-col md:flex-row md:space-x-6">
@@ -20,10 +20,10 @@ const ProductImageGallery = () => {
         {productImages.map((image, index) => (
           <Image
             key={index}
-            src={image.src}
-            alt={image.alt}
-            className={`w-full md:w-auto flex-shrink-0 cursor-pointer md:border-2 md:border-surface-primary ${selectedProductImage === image.src ? ' md:!border-primary' : ''}`}
-            onClick={() => setSelectedProductImage(image.src)}
+            src={image?.src}
+            alt={image?.alt}
+            className={`w-full md:w-auto flex-shrink-0 cursor-pointer md:border-2 md:border-surface-primary ${selectedProductImage === image?.src ? ' md:!border-primary' : ''}`}
+            onClick={() => setSelectedProductImage(image?.src)}
           />
         ))}
       </div>
