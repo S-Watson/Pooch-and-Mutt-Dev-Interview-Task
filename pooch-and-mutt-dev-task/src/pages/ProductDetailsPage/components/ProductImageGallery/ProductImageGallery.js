@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import Image from '../Image/Image';
-import productMainImage from '../../assets/images/Health-and-Digestion-1.webp';
-import productIngredientsImage from '../../assets/images/Health-and-Digestion-2.webp';
-import productInBowlImage from '../../assets/images/Health-and-Digestion-3.webp';
+import Image from '../../../../components/Image/Image';
+import productMainImage from '../../../../assets/images/Health-and-Digestion-1.webp';
+import productIngredientsImage from '../../../../assets/images/Health-and-Digestion-2.webp';
+import productInBowlImage from '../../../../assets/images/Health-and-Digestion-3.webp';
 
+// TODO: Replace hard coded values with real data that's passed through as props
 const ProductImageGallery = () => {
-  // TODO: Link to real data
   const productImages = [
     { src: productMainImage, alt: 'Health & Digestion package with ingredients' },
     { src: productIngredientsImage, alt: 'Ingredients in a bowl' },

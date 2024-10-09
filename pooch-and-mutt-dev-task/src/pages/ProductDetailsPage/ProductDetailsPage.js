@@ -1,7 +1,7 @@
 import React from 'react';
 import './ProductDetailsPage.css';
-import ProductImageGallery from '../../components/ProductImageGallery/ProductImageGallery';
-import ProductDetailsSection from '../../components/ProductDetailsSection/ProductDetailsSection';
+import ProductImageGallery from './components/ProductImageGallery/ProductImageGallery';
+import ProductDetailsSection from './components/ProductDetailsSection/ProductDetailsSection';
 import NewsletterSubscription from '../../components/NewsletterSubscription/NewsletterSubscription';
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumb';
 

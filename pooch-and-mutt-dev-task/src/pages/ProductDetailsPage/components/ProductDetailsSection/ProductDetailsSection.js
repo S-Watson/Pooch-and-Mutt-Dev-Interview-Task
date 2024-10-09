@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import ProductRating from '../ProductRating/ProductRating';
-import Button from '../Button/Button';
-import Select from '../Select/Select';
-import Radio from '../Radio/Radio';
+import Button from '../../../../components/Button/Button';
+import Select from '../../../../components/Select/Select';
+import Radio from '../../../../components/Radio/Radio';
 
 function ProductDetailsSection() {
   // TODO: Replace the following hard coded values with real data

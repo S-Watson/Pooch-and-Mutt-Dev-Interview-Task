@@ -2,13 +2,12 @@ import React from 'react';
 import './Button.css';
 
 const Button = ({ type = 'button', variant = 'primary', className = '', children, ...props }) => {
-  const baseClass = 'btn w-full md:w-auto';
-  const variantClass = `btn-${variant}`; // Dynamically apply the appropriate variant class
+  const variantClass = `btn-${variant}`;
 
   return (
     <button
       type={type}
-      className={`${baseClass} ${variantClass} ${className}`}
+      className={`btn w-full md:w-auto ${variantClass} ${className}`}
       {...props}
     >
       {children}

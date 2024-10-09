@@ -1,7 +1,7 @@
 import React from 'react';
-import Image from '../Image/Image';
-import iconStar from '../../assets/icons/icon-star.svg';
-import iconHalfStar from '../../assets/icons/icon-half-star.svg';
+import Image from '../../../../components/Image/Image';
+import iconStar from '../../../../assets/icons/icon-star.svg';
+import iconHalfStar from '../../../../assets/icons/icon-half-star.svg';
 
 const ProductRating = ({ rating = 0, ratingCount = 0 }) => {
   const fullStars = Math.floor(rating);
