@@ -1,0 +1,33 @@
+.custom-select {
+  @apply bg-surface-primary text-primary mt-3 block w-full py-5 px-6 border border-primary rounded-md focus:outline-none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('../../assets/icons/icon-chevron.svg');
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.custom-select:hover {
+  @apply border-primary;
+}
+
+.custom-select:focus, .custom-select:focus-visible {
+  @apply outline outline-focus-outline outline-2 outline-offset-0;
+}
+
+.custom-select:active {
+  @apply border-primary border-2;
+  padding: 11px 39px 11px 15px;
+}
+
+.custom-select.open {
+  background-image: url('../../assets/icons/icon-chevron-active.svg');
+}
+
+.custom-select:disabled {
+  @apply border-border-minimal bg-disabled-bg text-disabled cursor-not-allowed;
+  background-image: url('../../assets/icons/icon-chevron-disabled.svg');
+}

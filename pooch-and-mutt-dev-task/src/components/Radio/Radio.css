@@ -1,0 +1,25 @@
+.radio-label {
+  @apply flex items-center px-6 py-6 border border-border-secondary rounded-md cursor-pointer justify-between w-full;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.radio-label:hover {
+  @apply border-primary;
+}
+
+.radio-label:focus-within img, .radio-label:focus-visible img, .radio-label:focus img {
+  @apply outline outline-focus-outline outline-2 outline-offset-0 rounded-full;
+}
+
+.radio-label:active {
+  @apply border-primary border-2;
+  padding: 15px;
+}
+
+.radio-label.active {
+  @apply border-black bg-white;
+}
+
+.radio-label input:checked + label {
+  @apply border-black bg-white;
+}

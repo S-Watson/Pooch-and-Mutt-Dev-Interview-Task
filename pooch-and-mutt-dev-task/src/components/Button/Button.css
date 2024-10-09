@@ -1,0 +1,53 @@
+/* Base Button Styles */
+.btn {
+  @apply px-10 mt-8 py-7 text-button rounded-md;
+}
+
+/* Disabled State (for all buttons) */
+.btn:disabled {
+  @apply text-disabled cursor-not-allowed;
+}
+
+/* Primary Button */
+.btn-primary {
+  @apply bg-button-primary text-button-text;
+}
+
+.btn-primary:focus,
+.btn-primary:focus-visible {
+  @apply outline outline-focus-outline outline-2 outline-offset-0;
+}
+
+.btn-primary:hover {
+  @apply bg-button-primary-hover;
+}
+
+.btn-primary:active {
+  @apply bg-button-primary-pressed;
+}
+
+.btn-primary:disabled {
+  @apply bg-button-primary-disabled;
+}
+
+/* Secondary Button */
+.btn-secondary {
+  @apply bg-button-secondary text-secondary;
+}
+
+.btn-secondary:focus,
+.btn-secondary:focus-visible {
+  @apply outline outline-focus-outline outline-2 outline-offset-0;
+}
+
+.btn-secondary:hover {
+  @apply bg-button-secondary-hover;
+}
+
+.btn-secondary:active {
+  @apply bg-button-secondary-pressed;
+}
+
+.btn-secondary:disabled {
+  @apply bg-button-secondary-disabled;
+}

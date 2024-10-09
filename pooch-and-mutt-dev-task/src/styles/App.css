@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  @apply text-h1;
+}
+
+h2 {
+  @apply text-h2;
+}
+
+h3 {
+  @apply text-h3;
+}
+
+p {
+  @apply text-p1;
+}
+
+li::marker {
+  font-size: 12px;
+}
+
+.container {
+  max-width: 343px;
+
+  @media screen and (min-width: 701px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1101px) {
+    max-width: 1440px;
+  }
+  @media screen and (min-width: 1501px) {
+    max-width: 1680px;
+  }
+}

@@ -1,0 +1,30 @@
+/* Custom Input Styling */
+.custom-input::placeholder {
+  @apply text-disabled text-p1;
+}
+
+.custom-input:focus-visible {
+  @apply outline outline-focus-outline outline-2 outline-offset-0;
+}
+
+.custom-input:hover {
+  @apply border-primary;
+}
+
+.custom-input:hover::placeholder, 
+.custom-input:focus::placeholder {
+  @apply text-minimal;
+}
+
+.custom-input:focus {
+  @apply border-primary border-2;
+  padding: 15px;
+}
+
+.custom-input:disabled {
+  @apply border-border-minimal bg-disabled-bg text-disabled cursor-not-allowed;
+}
+
+.custom-input:disabled::placeholder {
+  @apply text-disabled;
+}
