@@ -14,6 +14,7 @@ To run this project locally, clone the repository and install the necessary depe
 ### Prerequisites
 
 Ensure you have Node.js and npm (or Yarn) installed on your machine. 
+I'm using Node version 18.18.1.
 
 ### Installation
 
